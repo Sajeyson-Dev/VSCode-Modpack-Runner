@@ -1,5 +1,4 @@
-# 
-VScode-Modpack-Runner
+# VScode-Modpack-Runner
 
 ***Make sure you have node.js installed before using this.***
 
