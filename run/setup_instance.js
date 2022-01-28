@@ -1,6 +1,7 @@
 const fs = require('fs')
+const path = require('path')
 
-var settings = "./settings"
+var settings = path.resolve('./settings')
 var files = ['mmc-pack.json', 'instance.cfg']
 
 function copy(src, dest) {

@@ -3,7 +3,7 @@ const path = require('path')
 const fs = require('fs')
 const config = require('./config.json')
 
-var instance_name = path.basename(path.dirname(__filename))
+var instance_name = path.basename(path.resolve('./'))
 var logType = path.resolve(`./.minecraft/logs/${config.log_type}.log`)
 
 function startInstance(args,  name) {
