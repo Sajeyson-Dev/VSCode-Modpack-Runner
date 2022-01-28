@@ -4,6 +4,15 @@
         {
             "type": "pwa-node",
             "request": "launch",
+            "name": "Start Instance",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "run/start_instance.js"
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
             "name": "Setup Instance",
             "skipFiles": [
                 "<node_internals>/**"
@@ -13,11 +22,11 @@
         {
             "type": "pwa-node",
             "request": "launch",
-            "name": "Start Instance",
+            "name": "Clear Instance",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "run/start_instance.js"
+            "program": "run/clear_instance.js"
         }
     ]
 }

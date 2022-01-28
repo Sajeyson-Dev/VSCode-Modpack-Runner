@@ -6,15 +6,13 @@ var files = ['mmc-pack.json', 'instance.cfg']
 
 function copy(src, dest) {
     fs.copyFile(src, dest, (error)=> {
-        if (error) {
-            console.log(error)
-        }
+        if (error) throw error
     })
 }
 
 if (!fs.existsSync(settings)) {
     fs.mkdir(settings, function(error) {
-        console.log(error)
+        if (error) throw error
     })
 }
 
