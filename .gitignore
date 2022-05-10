@@ -1,3 +1,5 @@
 .minecraft
+natives
 mmc-pack.json
 instance.cfg
+*.zip
