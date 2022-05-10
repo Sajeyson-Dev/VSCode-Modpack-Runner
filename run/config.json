@@ -1,0 +1,15 @@
+{
+    "mmcPath": "",
+    "instanceName": "",
+    "mcVersion": "",
+    "forgeVersion": "",
+    "logType": null,
+    "foldersToRemove" : [
+        "backups",
+        "crash-reports",
+        "journeymap/data",
+        "logs",
+        "saves",
+        "screenshots"
+    ]
+}
