@@ -11,7 +11,7 @@ var (
 	name      string = "VSCode-Modpack-Runner"
 	version   string = "1.0.2"
 	files            = []string{".vscode/launch.json", ".vscode/settings.json", "run/config.json", "run/setup_instance.js", "run/start_instance.js", "run/clear_instance.js"}
-	infoFiles        = []string{"LICENSE", "README"}
+	infoFiles        = []string{"LICENSE", "README" + ".md"}
 )
 
 func main() {
