@@ -67,6 +67,7 @@ export function pullModpackData() {
         modpackData.forEach(folder => {
             var input = path.resolve('./.minecraft/' + folder);
             var out = path.resolve(curseForge + '/Instances/' + instance + '/' + folder);
+            if (fs.existsSync(out)) fs.rmdirSync(out);
             if (fs.existsSync(out)) fs.unlinkSync(out);
             if (fs.existsSync(input)) fs.symlinkSync(input, out);
         });
