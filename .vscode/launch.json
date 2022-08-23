@@ -2,31 +2,40 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "pwa-node",
-            "request": "launch",
-            "name": "Start Instance",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "program": "run/start_instance.js"
-        },
-        {
-            "type": "pwa-node",
-            "request": "launch",
             "name": "Setup Instance",
+            "args": ["--experimental-json-modules", "run/task/setup_instance.mjs"],
+            "request": "launch",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "run/setup_instance.js"
+            "type": "node"
         },
         {
-            "type": "pwa-node",
+            "name": "Start Instance",
+            "args": ["--experimental-json-modules", "run/task/start_instance.mjs"],
             "request": "launch",
-            "name": "Clear Instance",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "run/clear_instance.js"
+            "type": "node"
+        },
+        {
+            "name": "Link Mods",
+            "args": ["--experimental-json-modules", "run/task/link_mods.mjs"],
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "name": "Pull Modpack Data",
+            "args": ["--experimental-json-modules", "run/task/pull_modpack.mjs"],
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
         }
     ]
 }

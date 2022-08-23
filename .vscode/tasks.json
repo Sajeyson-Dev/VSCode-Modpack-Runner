@@ -6,7 +6,7 @@
         {
             "label": "Build",
             "type": "shell",
-            "command": "go run build.go",
+            "command": "python build.py",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
