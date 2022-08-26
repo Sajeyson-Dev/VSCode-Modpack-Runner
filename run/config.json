@@ -1,9 +1,9 @@
 {
-    "mmcPath": "A:\\MultiMC\\MultiMC.exe",
-    "instanceName": "Dev",
-    "mcVersion": "1.7.10",
-    "forgeVersion": "10.13.4.1614",
-    "curseForgeFolder": "A:\\CurseForge",
+    "mmcPath": "",
+    "instanceName": "",
+    "mcVersion": "",
+    "forgeVersion": "",
+    "curseForgeFolder": "",
     "modpackFolders": [
         "config",
         "journeymap",
