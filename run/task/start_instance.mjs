@@ -1,3 +1,3 @@
-import { startInstance } from'./common.mjs';
+import { startInstance } from'../common.mjs';
 
 startInstance();

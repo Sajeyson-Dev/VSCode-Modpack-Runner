@@ -1,17 +1,15 @@
-import os
-import zipfile
+import shutil
 
 def build(name, version, folders, files):
-    out = zipfile.ZipFile(name + '-' + version + '.zip', 'w')
-    print('Building...')
+    build_dir = '.build/'
     for folder in folders:
-        for dir, subdirs, files_ in os.walk(folder):
-            for file_ in files_:
-                out.write(os.path.join(dir, file_))
+        shutil.copytree(folder, build_dir + folder)
+
     for file in files:
-        out.write(file)
-    out.close()
-    print('Done!')
+        shutil.copyfile(file, build_dir + folders[0] + '/' + file)
+    
+    shutil.make_archive(name + '-' + version, 'zip', build_dir)
+    shutil.rmtree(build_dir)
 
 
 build('VSCode-Modpack-Runner', '1.0.3', ['run', '.vscode'], ['LICENSE', 'README.md'])

@@ -1,3 +1,3 @@
-import { linkMods } from './common.mjs';
+import { linkMods } from '../common.mjs';
 
 linkMods();
