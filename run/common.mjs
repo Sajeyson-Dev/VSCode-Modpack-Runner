@@ -57,8 +57,10 @@ export function startInstance() {
 
 export function linkMods() {
     if (curseForge != '') {
-        fs.rmdirSync(mods);
-        fs.symlinkSync(path.resolve(curseForge + '/Instances/' + instance + '/mods'), mods);
+        if (fs.existsSync(mods)) fs.rmdirSync(mods);
+        fs.readdirSync(curseForge + '/Instances/').forEach(folder => { 
+            if (folder.match(instanceName)) fs.symlinkSync(path.resolve(curseForge + '/Instances/' + folder + '/mods'), mods);
+        });
     } else console.log('Unable to find CurseForge folder.');
 }
 

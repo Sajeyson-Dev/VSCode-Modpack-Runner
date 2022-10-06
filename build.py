@@ -12,4 +12,4 @@ def build(name, version, folders, files):
     shutil.rmtree(build_dir)
 
 
-build('VSCode-Modpack-Runner', '1.0.3', ['run', '.vscode'], ['LICENSE', 'README.md'])
+build('VSCode-Modpack-Runner', '1.0.4', ['run', '.vscode'], ['LICENSE', 'README.md'])
